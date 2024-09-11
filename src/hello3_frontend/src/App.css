@@ -1,0 +1,27 @@
+/* src/SimplePage.css */
+.simple-page {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .simple-header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+  }
+  
+  .simple-main {
+    margin: 20px;
+  }
+  
+  .simple-footer {
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  

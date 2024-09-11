@@ -1,31 +1,22 @@
-import { useState } from 'react';
-import { hello3_backend } from 'declarations/hello3_backend';
+// src/SimplePage.js
+import React from 'react';
+import './App.css'; // Importing CSS for styling
 
-function App() {
-  const [greeting, setGreeting] = useState('');
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    const name = event.target.elements.name.value;
-    hello3_backend.greet(name).then((greeting) => {
-      setGreeting(greeting);
-    });
-    return false;
-  }
-
+function SimplePage() {
   return (
-    <main>
-      <img src="/logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting">{greeting}</section>
-    </main>
+    <div className="simple-page">
+      <header className="simple-header">
+        <h1>Welcome to My Simple Webpage</h1>
+      </header>
+      <main className="simple-main">
+        <p>This is a simple static webpage built with React.</p>
+        <p>Feel free to customize and extend this page.</p>
+      </main>
+      <footer className="simple-footer">
+        <p>© 2024 My Simple Webpage</p>
+      </footer>
+    </div>
   );
 }
 
-export default App;
+export default SimplePage;
